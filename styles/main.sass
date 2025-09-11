@@ -3,21 +3,48 @@
     padding: 0
     box-sizing: border-box
 
+.container
+    max-width: 1200px
+    margin: 0 auto
+    padding: 1rem
+
 body 
     font-family: Arial, Helvetica, sans-serif
-    background: #272727
+    background: #000000
     color: #fff
 
+// ------------------------- header -------------------------
+
+// ------------------------- main -------------------------
+
+.main 
+    background: #242323
+
 .gallery 
-    padding: 1rem
     column-count: 3
     column-gap: 1rem
 
     &__item
         list-style-type: none
 
+        &:hover
+            scale: 1.02
+
     &__img 
         width: 100%
         margin-bottom: 1rem
         break-inside: avoid
         border-radius: 4px
+
+// ------------------------- footer -------------------------
+
+.footer 
+    text-align: center
+
+    &__link a
+        color: #ff0000
+        text-decoration: none
+        
+
+        &:hover
+            text-decoration: underline
