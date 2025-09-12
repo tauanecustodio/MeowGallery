@@ -16,6 +16,20 @@ body {
   color: #fff;
 }
 
+.header__title {
+  font-size: 1rem;
+}
+@media (min-width: 728px) {
+  .header__title {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .header__title {
+    font-size: 1.9rem;
+  }
+}
+
 .main {
   background: #242323;
 }
@@ -39,6 +53,9 @@ body {
   grid-area: button;
   height: min-content;
   align-self: center;
+  background: none;
+  color: #fff;
+  border: none;
 }
 .modal__img-container {
   display: flex;
@@ -78,8 +95,23 @@ body {
 }
 
 .gallery {
-  column-count: 3;
+  column-count: 2;
   column-gap: 1rem;
+}
+@media (min-width: 528px) {
+  .gallery {
+    column-count: 3;
+  }
+}
+@media (min-width: 728px) {
+  .gallery {
+    column-count: 4;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery {
+    column-count: 5;
+  }
 }
 .gallery__item {
   list-style-type: none;
