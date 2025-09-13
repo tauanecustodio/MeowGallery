@@ -51,7 +51,10 @@ function createGalleryItem(img) {
     galleryImg.setAttribute('src', img.url);
     galleryImg.className = 'gallery__img';
 
-    galleryItem.appendChild(galleryImg);
+    const galletyFavorite = document.createElement('i');
+    galletyFavorite.className  = 'fa-regular fa-heart';
+
+    galleryItem.append(galleryImg, galletyFavorite);
     
     return galleryItem;
 }
@@ -123,7 +126,7 @@ modalPrevEl.addEventListener('click', function() {
 
 modalEl.addEventListener('click', function(e) {
     const clickedInsideInteractiveArea = 
-        modalImgEl.contains(e.target) ||
+        modalImgContainerEl.contains(e.target) ||
         modalCloseBtnEl.contains(e.target) ||
         modalPrevEl.contains(e.target) ||
         modalNextEl.contains(e.target);

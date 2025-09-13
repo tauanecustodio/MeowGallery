@@ -58,13 +58,25 @@ body
         display: flex
         align-items: center
         justify-content: center
+        flex-direction: column
+        gap: 1rem
         height: 500px
         grid-area: img
+        justify-self: center
+
+        padding: 1rem
+        border: 1px solid rgba(0, 0, 0, 0.5)
+        border-radius: 4px
+        background: #2b2a2a
+
+        i 
+           align-self: end 
 
     &__img
         max-width: 100%
-        max-height: 100%
+        max-height: 90%
         border-radius: 4px
+        
     
     &__controls
         height: 500px
@@ -104,15 +116,27 @@ body
 
     &__item
         list-style-type: none
+        margin-bottom: 1rem
+        padding: 0.5rem
+        border: 1px solid rgba(0, 0, 0, 0.5)
+        border-radius: 4px
+        background: #2b2a2a
+        break-inside: avoid
+        page-break-inside: avoid
+        -webkit-column-break-inside: avoid
 
         &:hover
             scale: 1.02
 
+        i
+        text-align: right
+
     &__img 
         width: 100%
-        margin-bottom: 1rem
-        break-inside: avoid
+        margin-bottom: 0.5rem
         border-radius: 4px
+
+    
 
 // ------------------------- footer -------------------------
 
